@@ -1,0 +1,35 @@
+{
+  "name": "patternlab-cli",
+  "version": "0.1.0",
+  "main": "src/patternlab-cli.js",
+  "description": "Command line interface for PatternLab.",
+  "authors": [
+    "Dai Tran"
+  ],
+  "homepage": "",
+  "bugs": "https://github.com/daitr92/patternlab-cli/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daitr92/patternlab-cli.git"
+  },
+  "bin": {
+    "grommet": "./bin/patternlab-cli.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "ejs": "^2.5.1",
+    "mkdirp": "^0.5.1",
+    "shelljs": "^0.7.3",
+    "vorpal": "https://github.com/alansouzati/vorpal/tarball/EXIT_ON_PARSE",
+    "walk": "^2.3.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/babel src --out-dir bin --copy-files --loose-mode"
+  }
+}
